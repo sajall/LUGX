@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-image: url(./blue-bg.avif);
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100% 900px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+      }
+
+      .side-image {
+        background-image: url("http://canda772.com/assets/images/banner-image.jpg");
+        background-repeat: no-repeat;
+        background-size: 300px 400px;
+        object-fit: fill;
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+        margin-right: 50px;
+        position: relative;
+      }
+      #red-circle {
+        height: 55px;
+        width: 55px;
+        background-color: #f0616a;
+        border-radius: 50%;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        top: 355px;
+        right: 270px;
+      }
+      .dollor-par {
+        display: flex;
+        justify-content: end;
+        padding: 10px 10px 0 0;
+      }
+      .doller {
+        background-color: #048dfd;
+        color: #fff;
+        border-radius: 10px;
+        height: 20px;
+        width: 35px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .flec {
+        display: flex;
+
+        /* on x-axis */
+        justify-content: space-between;
+
+        /* on y-axis */
+        /* align-items: end; */
+        height: 70px;
+      }
+      .navs {
+        display: flex;
+        padding-right: 20px;
+        gap: 50px;
+      }
+      ul {
+        display: flex;
+        /* justify-content: space-evenly; */
+        gap: 50px;
+        align-items: center;
+      }
+
+      .navs ul li {
+        list-style-type: none;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+      }
+      .navs ul li.link:hover {
+        border-radius: 30px;
+        background-color: #127ffea1;
+        width: fit-content;
+        line-height: 30px;
+        transition: 0.3s;
+        padding: 2px 10px;
+      }
+      .navs ul li button {
+        width: 75px;
+        height: 30px;
+        background-color: #f26069;
+        color: white;
+        border: none;
+        border-radius: 75px;
+        margin-right: 20px;
+        font-weight: bold;
+
+      }
+      .navs ul li button:hover{
+        background-color: red;
+      }
+    
+      .flec div {
+        margin-left: 10px;
+      }
+      .flec img {
+        margin-top: 15px;
+      }
+      .flec:nth-child(1) {
+        padding-left: 20px;
+      }
+
+      #middle {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        /* position: relative; */
+      }
+      #right-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        padding-left: 50px;
+        /* margin-left: -115px; */
+      }
+      #input {
+        display: flex;
+        position: relative;
+        padding-top: 30px;
+      }
+      #input input {
+        width: 250px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        height: 35px;
+        text-indent: 30px;
+      }
+      #input input:hover {
+        background-color: rgb(233, 224, 224);
+        color: white;
+      }
+      #input input:focus {
+        outline: none;
+        box-shadow: -1px 0px 9px 1px rgba(0,0,0,0.75);
+        color: #000;
+      }
+      #input button {
+        background-color: #ee616a;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        position: absolute;
+        width: 110px;
+        left: 220px;
+        height: 37px;
+        font-size: 12px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      #input button:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flec">
+      <div><img src="./lugx-removebg-preview.png" alt="" /></div>
+      <div class="navs">
+        <ul>
+          <li class="link">Home</li>
+          <li class="link">Our shop</li>
+          <li class="link">Product Details</li>
+          <li class="link">Contact Us</li>
+          <li><button>sign In</button></li>
+        </ul>
+      </div>
+    </div>
+    <div id="middle">
+      <div id="right-text">
+        <p>WELCOME TO LUGX</p>
+        <h1>BEST GAMING SITE EVER!</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Quo in inventore voluptate cupiditate dolorum natus <br>
+           consequuntur temporibus dicta rerum libero!
+        </p>
+
+        <div id="input">
+          <input type="text" placeholder="Type Something" />
+          <button>SEARCH NOW</button>
+        </div>
+      </div>
+      <div class="side-image">
+        <div class="dollor-par">
+          <div class="doller">$22</div>
+        </div>
+        <div id="red-circle">
+          <div id="percent">-40%</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
